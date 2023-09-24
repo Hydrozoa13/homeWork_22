@@ -11,5 +11,6 @@ struct ViolinString {
     let name: String
     let price: Double
     let image: UIImage?
+    var rating = "⭐⭐⭐"
     var feedBacks: [Feedback] = []
 }

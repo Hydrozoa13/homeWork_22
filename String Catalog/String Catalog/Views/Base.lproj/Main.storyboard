@@ -10,11 +10,13 @@
         <!--String Catalog-->
         <scene sceneID="7D3-hK-3g6">
             <objects>
-                <tableViewController id="Vhn-Eu-sui" sceneMemberID="viewController">
+                <tableViewController id="Vhn-Eu-sui" customClass="StringCatalogTVC" customModule="String_Catalog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="3f4-Yl-p94">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.65836504177471089" green="0.77119941851605422" blue="0.89449179292929293" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="separatorColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="KQz-Gg-PiD" detailTextLabel="CXl-Ku-4P4" imageView="Pak-0f-j46" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="cv6-fQ-Vc8">
                                 <rect key="frame" x="20" y="55.333332061767578" width="390" height="90"/>
@@ -24,23 +26,23 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KQz-Gg-PiD">
-                                            <rect key="frame" x="124.3333333333333" y="1.3333333333333321" width="56.333333333333336" height="32.666666666666664"/>
+                                            <rect key="frame" x="124.99999999999999" y="1.3333333333333321" width="56.333333333333336" height="32.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="27"/>
                                             <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CXl-Ku-4P4">
-                                            <rect key="frame" x="124.33333333333331" y="37.666666666666664" width="66.666666666666671" height="48"/>
+                                            <rect key="frame" x="124.99999999999999" y="37.666666666666657" width="59.333333333333336" height="48.333333333333336"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <string key="text">Subtitle
 Rating</string>
-                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
                                             <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="dominant" id="Pak-0f-j46">
-                                            <rect key="frame" x="20" y="0.0" width="89.333333333333314" height="90"/>
+                                            <rect key="frame" x="20" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -67,7 +69,7 @@ Rating</string>
         <!--Details-->
         <scene sceneID="D1c-XE-yqa">
             <objects>
-                <viewController id="gPT-ZI-WUK" sceneMemberID="viewController">
+                <viewController id="gPT-ZI-WUK" customClass="DetailsVC" customModule="String_Catalog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gn6-Je-dhm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +97,7 @@ Rating</string>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSm-5A-9kU">
                                                         <rect key="frame" x="0.0" y="37.666666666666629" width="380" height="32.666666666666657"/>
-                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="27"/>
                                                         <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -166,6 +168,14 @@ Rating</string>
                     <navigationItem key="navigationItem" title="Details" id="AgK-KD-Mt3">
                         <barButtonItem key="backBarButtonItem" title="Details" id="Ova-5w-VX2"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="c87-oT-rgN" id="mRk-bf-wue"/>
+                        <outlet property="showReviewsBtn" destination="wVe-H4-FRv" id="XDU-vR-ahW"/>
+                        <outlet property="stackView" destination="2Qp-MQ-9rn" id="yD8-We-BJB"/>
+                        <outlet property="stringsNameLbl" destination="1fg-Vd-OxK" id="xGk-7Y-J85"/>
+                        <outlet property="stringsPriceLbl" destination="fSm-5A-9kU" id="uOX-PE-127"/>
+                        <outlet property="stringsRatingLbl" destination="S51-NG-1eh" id="N18-jL-fKz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s65-96-eTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,7 +228,7 @@ Rating</string>
                                                 <segments>
                                                     <segment title="⭐"/>
                                                     <segment title="⭐⭐"/>
-                                                    <segment title="⭐⭐⭐"/>
+                                                    <segment title="⭐(3)"/>
                                                     <segment title="⭐(4)"/>
                                                     <segment title="⭐(5)"/>
                                                 </segments>
@@ -269,7 +279,7 @@ Rating</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.65882354970000001" green="0.77254903320000001" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="W9X-zd-asg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="W9X-zd-asg">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9X-zd-asg" id="fTP-E9-a18">
@@ -297,7 +307,7 @@ Rating</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jjj-NA-veP">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.51666950239999998" green="0.6064349255" blue="0.69623974119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.65882354970000001" green="0.77254903320000001" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
@@ -312,6 +322,6 @@ Rating</string>
         </scene>
     </scenes>
     <resources>
-        <image name="dominant" width="1191" height="1200"/>
+        <image name="dominant" width="100" height="100"/>
     </resources>
 </document>

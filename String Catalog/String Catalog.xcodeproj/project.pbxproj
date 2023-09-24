@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14ED7752AC05C13008D5602 /* StringsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14ED7742AC05C13008D5602 /* StringsData.swift */; };
+		D14ED7782AC0608F008D5602 /* StringCatalogTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14ED7772AC0608F008D5602 /* StringCatalogTVC.swift */; };
+		D14ED77B2AC06D29008D5602 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14ED77A2AC06D29008D5602 /* DetailsVC.swift */; };
+		D14ED77D2AC06F1A008D5602 /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14ED77C2AC06F1A008D5602 /* CellConfigurator.swift */; };
 		D18FB0752AC035990000BB5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB0742AC035990000BB5F /* AppDelegate.swift */; };
 		D18FB0772AC035990000BB5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB0762AC035990000BB5F /* SceneDelegate.swift */; };
 		D18FB07C2AC035990000BB5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18FB07A2AC035990000BB5F /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D14ED7742AC05C13008D5602 /* StringsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsData.swift; sourceTree = "<group>"; };
+		D14ED7772AC0608F008D5602 /* StringCatalogTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCatalogTVC.swift; sourceTree = "<group>"; };
+		D14ED77A2AC06D29008D5602 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		D14ED77C2AC06F1A008D5602 /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 		D18FB0712AC035990000BB5F /* String Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "String Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18FB0742AC035990000BB5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18FB0762AC035990000BB5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D14ED7732AC05BE1008D5602 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D14ED7742AC05C13008D5602 /* StringsData.swift */,
+				D14ED77C2AC06F1A008D5602 /* CellConfigurator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D14ED7762AC06051008D5602 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				D14ED7772AC0608F008D5602 /* StringCatalogTVC.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		D14ED7792AC06CFE008D5602 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D14ED77A2AC06D29008D5602 /* DetailsVC.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		D18FB0682AC035990000BB5F = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +91,10 @@
 		D18FB0732AC035990000BB5F /* String Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				D14ED7732AC05BE1008D5602 /* Services */,
 				D18FB08C2AC041820000BB5F /* Models */,
 				D18FB08A2AC0360B0000BB5F /* Views */,
-				D18FB08B2AC0361C0000BB5F /* Controllers */,
+				D18FB08B2AC0361C0000BB5F /* Flows */,
 				D18FB07D2AC035990000BB5F /* Assets.xcassets */,
 				D18FB0822AC035990000BB5F /* Info.plist */,
 				D18FB0892AC035F40000BB5F /* Delegate */,
@@ -86,11 +120,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D18FB08B2AC0361C0000BB5F /* Controllers */ = {
+		D18FB08B2AC0361C0000BB5F /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				D14ED7762AC06051008D5602 /* Strings */,
+				D14ED7792AC06CFE008D5602 /* Details */,
 			);
-			path = Controllers;
+			path = Flows;
 			sourceTree = "<group>";
 		};
 		D18FB08C2AC041820000BB5F /* Models */ = {
@@ -173,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14ED7782AC0608F008D5602 /* StringCatalogTVC.swift in Sources */,
 				D18FB08E2AC042180000BB5F /* ViolinString.swift in Sources */,
+				D14ED7752AC05C13008D5602 /* StringsData.swift in Sources */,
 				D18FB0752AC035990000BB5F /* AppDelegate.swift in Sources */,
+				D14ED77D2AC06F1A008D5602 /* CellConfigurator.swift in Sources */,
+				D14ED77B2AC06D29008D5602 /* DetailsVC.swift in Sources */,
 				D18FB0902AC042E70000BB5F /* Feedback.swift in Sources */,
 				D18FB0772AC035990000BB5F /* SceneDelegate.swift in Sources */,
 			);
