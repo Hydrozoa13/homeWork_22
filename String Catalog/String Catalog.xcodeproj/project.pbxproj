@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D18FB0752AC035990000BB5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB0742AC035990000BB5F /* AppDelegate.swift */; };
 		D18FB0772AC035990000BB5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB0762AC035990000BB5F /* SceneDelegate.swift */; };
-		D18FB0792AC035990000BB5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB0782AC035990000BB5F /* ViewController.swift */; };
 		D18FB07C2AC035990000BB5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18FB07A2AC035990000BB5F /* Main.storyboard */; };
 		D18FB07E2AC035990000BB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18FB07D2AC035990000BB5F /* Assets.xcassets */; };
 		D18FB0812AC035990000BB5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18FB07F2AC035990000BB5F /* LaunchScreen.storyboard */; };
+		D18FB08E2AC042180000BB5F /* ViolinString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB08D2AC042180000BB5F /* ViolinString.swift */; };
+		D18FB0902AC042E70000BB5F /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB08F2AC042E70000BB5F /* Feedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D18FB0712AC035990000BB5F /* String Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "String Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18FB0742AC035990000BB5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18FB0762AC035990000BB5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D18FB0782AC035990000BB5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D18FB07B2AC035990000BB5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D18FB07D2AC035990000BB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D18FB0802AC035990000BB5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D18FB0822AC035990000BB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18FB08D2AC042180000BB5F /* ViolinString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolinString.swift; sourceTree = "<group>"; };
+		D18FB08F2AC042E70000BB5F /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		D18FB0732AC035990000BB5F /* String Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				D18FB0742AC035990000BB5F /* AppDelegate.swift */,
-				D18FB0762AC035990000BB5F /* SceneDelegate.swift */,
-				D18FB0782AC035990000BB5F /* ViewController.swift */,
-				D18FB07A2AC035990000BB5F /* Main.storyboard */,
+				D18FB08C2AC041820000BB5F /* Models */,
+				D18FB08A2AC0360B0000BB5F /* Views */,
+				D18FB08B2AC0361C0000BB5F /* Controllers */,
 				D18FB07D2AC035990000BB5F /* Assets.xcassets */,
-				D18FB07F2AC035990000BB5F /* LaunchScreen.storyboard */,
 				D18FB0822AC035990000BB5F /* Info.plist */,
+				D18FB0892AC035F40000BB5F /* Delegate */,
 			);
 			path = "String Catalog";
+			sourceTree = "<group>";
+		};
+		D18FB0892AC035F40000BB5F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D18FB0742AC035990000BB5F /* AppDelegate.swift */,
+				D18FB0762AC035990000BB5F /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		D18FB08A2AC0360B0000BB5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D18FB07A2AC035990000BB5F /* Main.storyboard */,
+				D18FB07F2AC035990000BB5F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D18FB08B2AC0361C0000BB5F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D18FB08C2AC041820000BB5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D18FB08D2AC042180000BB5F /* ViolinString.swift */,
+				D18FB08F2AC042E70000BB5F /* Feedback.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18FB0792AC035990000BB5F /* ViewController.swift in Sources */,
+				D18FB08E2AC042180000BB5F /* ViolinString.swift in Sources */,
 				D18FB0752AC035990000BB5F /* AppDelegate.swift in Sources */,
+				D18FB0902AC042E70000BB5F /* Feedback.swift in Sources */,
 				D18FB0772AC035990000BB5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.String-Catalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.String-Catalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
