@@ -14,7 +14,7 @@ struct Feedback {
     func toString() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = Calendar(identifier: .gregorian)
-        dateFormatter.dateFormat = "dd.MM.yyyy   HH:mm"
+        dateFormatter.dateFormat = "dd.MM.yyyy   HH:mm:ss"
         let toString = dateFormatter.string(from: Date())
         return toString
     }

@@ -10,7 +10,6 @@ import UIKit
 class DetailsVC: UIViewController {
     
     var index: Int!
-    
     var strings: ViolinString {
         StringsData.shared.strings[index]
     }
