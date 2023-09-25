@@ -131,7 +131,7 @@ Rating</string>
                                                             <color key="baseBackgroundColor" red="0.51666950239999998" green="0.6064349255" blue="0.69623974119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="yaJ-p5-I75" kind="show" id="wAF-0a-mif"/>
+                                                            <segue destination="yaJ-p5-I75" kind="show" identifier="" id="wAF-0a-mif"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsl-We-Gdk">
@@ -184,7 +184,7 @@ Rating</string>
         <!--Your review-->
         <scene sceneID="hIg-TN-9wc">
             <objects>
-                <viewController id="d26-ma-grF" sceneMemberID="viewController">
+                <viewController id="d26-ma-grF" customClass="NewReviewVC" customModule="String_Catalog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ma7-kI-6P3">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,6 +249,9 @@ Rating</string>
                                                     <color key="baseForegroundColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <color key="baseBackgroundColor" red="0.51666950239999998" green="0.6064349255" blue="0.69623974119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="saveAction" destination="d26-ma-grF" eventType="touchUpInside" id="DDz-E0-N3g"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -265,6 +268,13 @@ Rating</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your review" id="aRe-31-f47"/>
+                    <connections>
+                        <outlet property="errorLbl" destination="1r0-iv-kyY" id="7Qb-bC-EqD"/>
+                        <outlet property="reviewTV" destination="3v5-Nq-ujx" id="57j-8A-TaE"/>
+                        <outlet property="saveReviewBtn" destination="5Wb-72-x1h" id="9MO-Vw-fuZ"/>
+                        <outlet property="segmentedControl" destination="yaX-eV-vGr" id="Ywx-2p-fKJ"/>
+                        <outlet property="stackView" destination="A6U-qX-3X2" id="uIZ-j2-eaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4b-yf-odJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,18 +283,34 @@ Rating</string>
         <!--All reviews-->
         <scene sceneID="moE-1a-AES">
             <objects>
-                <tableViewController id="yaJ-p5-I75" sceneMemberID="viewController">
+                <tableViewController id="yaJ-p5-I75" customClass="AllReviewsTVC" customModule="String_Catalog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6Tf-z2-50V">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.65882354970000001" green="0.77254903320000001" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="W9X-zd-asg">
-                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="UuK-Q9-UVT" detailTextLabel="hMO-bu-AE0" rowHeight="77" style="IBUITableViewCellStyleSubtitle" id="W9X-zd-asg">
+                                <rect key="frame" x="0.0" y="50" width="430" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9X-zd-asg" id="fTP-E9-a18">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UuK-Q9-UVT">
+                                            <rect key="frame" x="19.999999999999996" y="8.9999999999999982" width="44.666666666666664" height="30.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="25"/>
+                                            <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hMO-bu-AE0">
+                                            <rect key="frame" x="20" y="39.333333333333329" width="74" height="30.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="25"/>
+                                            <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.65882354970000001" green="0.77254903320000001" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableViewCell>
@@ -298,7 +324,7 @@ Rating</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXh-Hc-fSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-382"/>
+            <point key="canvasLocation" x="1696.7441860465117" y="-382.40343347639487"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fde-be-dA2">

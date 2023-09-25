@@ -8,7 +8,14 @@
 import Foundation
 
 struct Feedback {
-    private let date = Date()
     let text: String
-    let mark: Double
+    let mark: Int
+    
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.calendar = Calendar(identifier: .gregorian)
+        dateFormatter.dateFormat = "dd.MM.yyyy   HH:mm"
+        let toString = dateFormatter.string(from: Date())
+        return toString
+    }
 }

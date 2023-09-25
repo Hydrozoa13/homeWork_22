@@ -18,6 +18,8 @@
 		D18FB0812AC035990000BB5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18FB07F2AC035990000BB5F /* LaunchScreen.storyboard */; };
 		D18FB08E2AC042180000BB5F /* ViolinString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB08D2AC042180000BB5F /* ViolinString.swift */; };
 		D18FB0902AC042E70000BB5F /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB08F2AC042E70000BB5F /* Feedback.swift */; };
+		D1F9DBA42AC1D62B0037FCFE /* NewReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9DBA32AC1D62B0037FCFE /* NewReviewVC.swift */; };
+		D1F9DBA62AC20A750037FCFE /* AllReviewsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9DBA52AC20A750037FCFE /* AllReviewsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D18FB0822AC035990000BB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D18FB08D2AC042180000BB5F /* ViolinString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolinString.swift; sourceTree = "<group>"; };
 		D18FB08F2AC042E70000BB5F /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		D1F9DBA32AC1D62B0037FCFE /* NewReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReviewVC.swift; sourceTree = "<group>"; };
+		D1F9DBA52AC20A750037FCFE /* AllReviewsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllReviewsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			children = (
 				D14ED7762AC06051008D5602 /* Strings */,
 				D14ED7792AC06CFE008D5602 /* Details */,
+				D1F9DBA22AC1D5EB0037FCFE /* Reviews */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -136,6 +141,15 @@
 				D18FB08F2AC042E70000BB5F /* Feedback.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D1F9DBA22AC1D5EB0037FCFE /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				D1F9DBA52AC20A750037FCFE /* AllReviewsTVC.swift */,
+				D1F9DBA32AC1D62B0037FCFE /* NewReviewVC.swift */,
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +226,10 @@
 				D14ED7782AC0608F008D5602 /* StringCatalogTVC.swift in Sources */,
 				D18FB08E2AC042180000BB5F /* ViolinString.swift in Sources */,
 				D14ED7752AC05C13008D5602 /* StringsData.swift in Sources */,
+				D1F9DBA62AC20A750037FCFE /* AllReviewsTVC.swift in Sources */,
 				D18FB0752AC035990000BB5F /* AppDelegate.swift in Sources */,
 				D14ED77D2AC06F1A008D5602 /* CellConfigurator.swift in Sources */,
+				D1F9DBA42AC1D62B0037FCFE /* NewReviewVC.swift in Sources */,
 				D14ED77B2AC06D29008D5602 /* DetailsVC.swift in Sources */,
 				D18FB0902AC042E70000BB5F /* Feedback.swift in Sources */,
 				D18FB0772AC035990000BB5F /* SceneDelegate.swift in Sources */,

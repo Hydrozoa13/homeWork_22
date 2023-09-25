@@ -31,9 +31,10 @@ class DetailsVC: UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         updateUI(with: size)
     }
-    
+
     private func setupUI() {
         imageView.image = strings.image
+        imageView.layer.cornerRadius = 10
         stringsNameLbl.text = strings.name
         stringsPriceLbl.text = strings.price.description + " BYN"
         stringsRatingLbl.text = strings.rating
@@ -46,14 +47,13 @@ class DetailsVC: UIViewController {
         stackView.axis = isVertical ? .vertical : .horizontal
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? NewReviewVC {
+            vc.index = self.index
+        } else if let vc2 = segue.destination as? AllReviewsTVC {
+            vc2.index = self.index
+        }
     }
-    */
-
 }
