@@ -26,6 +26,7 @@ class NewReviewVC: UIViewController {
     @IBAction func saveAction() {
         let review = Feedback.init(text: reviewTV.text, mark: segmentedControl.selectedSegmentIndex + 1)
         StringsData.shared.strings[index].feedBacks.append(review)
+        StringsData.shared.strings[index].rating = StringsData.shared.strings[index].updatedRating
         navigationController?.popToRootViewController(animated: true)
     }
     

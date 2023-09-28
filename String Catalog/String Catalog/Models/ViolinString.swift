@@ -11,14 +11,16 @@ struct ViolinString {
     let name: String
     let price: Double
     let image: UIImage?
-    var defaultRating = "⭐⭐⭐"
-    var rating: String {
+    var rating = "No rating"
+    var updatedRating: String { calculateRating() }
+    var feedBacks: [Feedback] = []
+    
+    private func calculateRating() -> String {
         var rating = 0.0
         for feedBack in feedBacks {
             rating += Double(feedBack.mark)
         }
         let formatted = String(format: "%.1f", rating / Double(feedBacks.count))
-        return "\(formatted)⭐"
+        return "\(formatted)★"
     }
-    var feedBacks: [Feedback] = []
 }

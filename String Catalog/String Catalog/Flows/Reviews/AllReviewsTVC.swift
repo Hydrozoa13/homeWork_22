@@ -14,10 +14,6 @@ class AllReviewsTVC: UITableViewController {
         StringsData.shared.strings[index]
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

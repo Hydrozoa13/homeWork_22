@@ -226,11 +226,11 @@ Rating</string>
                                                     <constraint firstAttribute="height" constant="55" id="PXB-oS-LR5"/>
                                                 </constraints>
                                                 <segments>
-                                                    <segment title="⭐"/>
-                                                    <segment title="⭐⭐"/>
-                                                    <segment title="⭐(3)"/>
-                                                    <segment title="⭐(4)"/>
-                                                    <segment title="⭐(5)"/>
+                                                    <segment title="★"/>
+                                                    <segment title="★★"/>
+                                                    <segment title="★★★"/>
+                                                    <segment title="★(4)"/>
+                                                    <segment title="★(5)"/>
                                                 </segments>
                                                 <color key="selectedSegmentTintColor" red="0.65882354970000001" green="0.77254903320000001" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </segmentedControl>
