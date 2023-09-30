@@ -335,6 +335,7 @@ Rating</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jjj-NA-veP">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.65882354970000001" green="0.77254903320000001" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.2478596434" green="0.29092242470000002" blue="0.33400410349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
