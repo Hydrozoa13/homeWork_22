@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pirastro_chromcor.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
